@@ -320,7 +320,7 @@
 					{
 						"schema": "dbo",
 						"table_name": "DimDate",
-						"update_column": "Updated_at",
+						"update_column": "date",
 						"from_date": ""
 					},
 					{
@@ -338,7 +338,7 @@
 					{
 						"schema": "dbo",
 						"table_name": "FactStream",
-						"update_column": "Updated_at",
+						"update_column": "stream_timestamp",
 						"from_date": ""
 					}
 				]

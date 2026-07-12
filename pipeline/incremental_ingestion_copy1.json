@@ -254,7 +254,10 @@
 												"type": "DatasetReference",
 												"parameters": {
 													"container": "bronze",
-													"folder": "cdc",
+													"folder": {
+														"value": "@concat(item().table_name,'_cdc')",
+														"type": "Expression"
+													},
 													"file": "empt.json"
 												}
 											}
@@ -265,7 +268,7 @@
 												"type": "DatasetReference",
 												"parameters": {
 													"container": "bronze",
-													"folder": "cdc",
+													"folder": "@concat(item().table_name,'_cdc')",
 													"file": "cdc.json"
 												}
 											}

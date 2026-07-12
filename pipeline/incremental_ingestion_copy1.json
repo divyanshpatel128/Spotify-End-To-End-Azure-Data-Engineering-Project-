@@ -80,11 +80,11 @@
 									"parameters": {
 										"container": "bronze",
 										"folder": {
-											"value": "@item().table",
+											"value": "@item().table_name",
 											"type": "Expression"
 										},
 										"file": {
-											"value": "@concat(item().table,'_',variables('current'))",
+											"value": "@concat(item().table_name,'_',variables('current'))",
 											"type": "Expression"
 										}
 									}

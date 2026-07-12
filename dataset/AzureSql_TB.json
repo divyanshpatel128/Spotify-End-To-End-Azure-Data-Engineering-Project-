@@ -5,11 +5,6 @@
 			"referenceName": "AzureSql",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"tables_name": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": []

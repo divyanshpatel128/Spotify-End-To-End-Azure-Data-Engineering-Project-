@@ -301,7 +301,7 @@
 												{
 													"type": "Query",
 													"text": {
-														"value": "select max(item().update_column}) as cdc_date\nfrom item().schema.item().table_name",
+														"value": "@concat(\n'SELECT MAX(',\nitem().update_column,\n') AS cdc_date FROM ',\nitem().schema,\n'.',\nitem().table_name\n)",
 														"type": "Expression"
 													}
 												}
